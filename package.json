@@ -1,0 +1,27 @@
+{
+  "name": "ddtools",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "highlight.js": "^11.10.0",
+    "sql-formatter": "^15.4.6",
+    "v-code-diff": "^1.13.1",
+    "vfonts": "^0.0.3",
+    "vue": "^3.5.12",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "naive-ui": "^2.40.1",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.8"
+  }
+}
