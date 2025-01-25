@@ -47,10 +47,8 @@ const drawText = (ctx: any, words: string[], textFontSize: number) => {
 
     ctx.fillText(words.join(''), textFontSize / 2, canvasInfo.height / 2);
   } else {
-    console.log(words);
     let rowLength = 1;
     while (textFontSize * rowLength + textFontSize / 2 < canvasInfo.width) {
-      console.log(1);
       rowLength++;
     }
     const rows = Math.ceil(words.length / (rowLength - 1));
@@ -133,15 +131,11 @@ const downloadImg = () => {
   a.click();
 }
 const remParam = () => {
-  console.log(remember.value);
   if (remember.value) {
-    console.log('保存');
     localCache.setCache('canvasInfo', canvasInfo);
   } else {
-    console.log('删除');
     localCache.removeCache('canvasInfo');
   }
-  // console.log(localCache.getCache('canvasInfo'));
 }
 
 
